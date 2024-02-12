@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    background-color: #198754;
+    width: 5px;
+}
+body{background-color: black;}
+.config-pagina-inicial{
+    display: flex;
+}
+.conteudo-home{
+    /* background-color: black; */
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
