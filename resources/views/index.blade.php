@@ -34,6 +34,7 @@
       <div class="conteudo-home-direito">
         <div class="menu-direito">
             @include('/inc/menu-direito')
+            
         </div>
       </div>
 
