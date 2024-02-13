@@ -3,3 +3,4 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <!-- menu -->
 <script src="/js/menu.js"></script>
+<script src="/js/menu-direito-config.js"></script>

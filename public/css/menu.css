@@ -1,8 +1,6 @@
 #menu-lateral{
     background-color: rgb(255, 255, 255);
     height: 100vh;
-    width: 0px;
-    min-width: 44px;
     position: fixed;
     overflow-y: auto;
     transition: width .7s;
@@ -25,7 +23,7 @@
     content: '';
     background-color: rgba(0, 0, 0, 0.11);
     position: absolute;
-    width: 10%;
+    width: 33px;
     height: 100%;
     top: 0;
     left: 0;
