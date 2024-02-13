@@ -3,17 +3,24 @@
     max-width: 100%;
     margin: 0;
 }
+:root{
+    --primary-color:#198754;
+    --white-transparent: rgba(255, 255, 255, 0.24);
+}
+
 ::-webkit-scrollbar{
-    background-color: #198754;
+    background-color: var(--primary-color);
     width: 5px;
 }
-body{background-color: black;}
 .config-pagina-inicial{
     display: flex;
-}
+    background: linear-gradient(171deg, rgba(255,0,0,1) 0%, rgba(121,9,58,1) 53%, rgba(255,0,245,1) 100%);}
 .conteudo-home{
-    /* background-color: black; */
     width: 100%;
     height: 100vh;
     overflow-y: auto;
+}
+
+.tema-dark{
+    background-color: #1c1c1c !important;
 }

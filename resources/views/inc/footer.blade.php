@@ -1,7 +1,7 @@
     <footer>
         
     </footer>
-@include('codes')
+@include('/inc/codes')
 
 </body>
 </html>

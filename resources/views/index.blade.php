@@ -1,4 +1,4 @@
-@include('header')
+@include('/inc/header')
 
 <div class="config-pagina-inicial">
     <div id="menu-lateral">
@@ -28,21 +28,15 @@
     </div>
     
     <div class="conteudo-home">
-        <!-- <div style="background:blue; height:500px;">
-    ee
+      <div class="conteudo-home-centro">
+
+      </div>
+      <div class="conteudo-home-direito">
+        <div class="menu-direito">
+            @include('/inc/menu-direito')
         </div>
-        <div style="background:red; height:500px;">
-    ee
-        </div>
-        <div style="background:blue; height:500px;">
-    ee
-        </div>
-        <div style="background:red; height:500px;">
-    ee
-        </div>
-        <div style="background:blue; height:500px;">
-    ee
-        </div> -->
+      </div>
+
     </div>
 </div>
 
@@ -74,4 +68,4 @@
 
 
 
-@include('footer')
+@include('/inc/footer')
