@@ -1,43 +1,29 @@
     // Tema Dark
-    // let tema_dark = document.querySelector("#tema-dark")
-    // tema_dark.addEventListener('click', ()=>{
-    //     let menu_lateral = document.querySelector('#menu-lateral')
-    //     menu_lateral.classList.toggle('tema-dark')
-    // })
 
-    let contadorCliques = 0;
 
-    let tema_dark = document.querySelector("#tema-dark");
-    let menu_lateral = document.querySelector("#menu-lateral");
-    console.log(menu_lateral)
-    console.log(tema_dark)
-    
-    tema_dark.addEventListener('click', () => {
-        contadorCliques++;
-    
-        if (contadorCliques % 2 === 0) {
-            localStorage.setItem('valor', 'true');
-            console.log('true');
-        } else {
-            localStorage.setItem('valor', 'false');
-            console.log('false');
-        }
-    
-        if (contadorCliques >= 2) {
-            localStorage.removeItem('valor');
-            contadorCliques = 0;
-        }
-    
-        // Verifica se o valor armazenado é 'true' e adiciona a classe tema-dark ao #menu-lateral
-        if (localStorage.getItem('valor') === 'true') {
-            menu_lateral.classList.add('tema-dark');
-        } else {
-            // Caso contrário, remove a classe tema-dark do #menu-lateral
-            menu_lateral.classList.remove('tema-dark');
-        }
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+        let tema_dark = document.querySelector("#tema-dark");
+        let menu_lateral = document.querySelector("#menu-lateral");
+        // Verificar e aplicar o tema dark baseado no valor armazenado
+        const temaDarkAtivo = localStorage.getItem('temaDark') === 'true';
         
-    
+        if (temaDarkAtivo) {
+            menu_lateral.classList.add('tema-dark');
+        }
+
+        tema_dark.addEventListener('click', () => {
+            // Alternar o estado do tema dark
+            const estaAtivo = menu_lateral.classList.contains('tema-dark');
+            if (estaAtivo) {
+                localStorage.setItem('temaDark', 'false');
+                menu_lateral.classList.remove('tema-dark');
+            } else {
+                localStorage.setItem('temaDark', 'true');
+                menu_lateral.classList.add('tema-dark');
+            }
+        });
+
+    });
 
     // Menu lateral fixo
 
