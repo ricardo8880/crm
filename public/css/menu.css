@@ -34,6 +34,15 @@
     width: 100%;
     z-index: -10;
 }
+/* conteúdo centro */
+.conteudo-home{
+  display: flex;
+}
+.conteudo-home-centro{
+width: 96%;
+height: 100vh;
+transition: .7s;
+}
 /* menu direito */
 .conteudo-home-direito{
     width: 4%;
@@ -42,8 +51,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: 5px;
-}
+    padding-top: 10px;
+  }
 .menu-direito-config button:hover .bi-gear-fill {
     transform: rotate(360deg);
     display: block;
