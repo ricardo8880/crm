@@ -16,33 +16,67 @@
 
 .config-pagina-inicial{
     display: flex;
-    /* cores claras */
-    /* background: linear-gradient(171deg, #CFF1FF 0%, #E0EAFF 100%); */
-    /* background: linear-gradient(171deg, #C5E1A5 0%, #DCF8C6 100%); */
-    /* background: linear-gradient(171deg, #FFD6E8 0%, #FFE5EC 100%); */
-    /* background: linear-gradient(171deg, #FFF4CC 0%, #FFFAD5 100%); */
-    /* cores escuras */
-/* background: linear-gradient(171deg, #0A3754 0%, #081F2F 100%); */
-/* background: linear-gradient(171deg, #2E7D32 0%, #1B5E20 100%); */
-/* background: linear-gradient(171deg, #8E0038 0%, #5B0A26 100%); */
-/* background: linear-gradient(171deg, #8A6100 0%, #664D03 100%); */
-/* cores vibrantes */
-background: linear-gradient(171deg, rgba(0, 128, 255, 1) 0%, rgba(51, 255, 0, 1) 53%, rgba(255, 0, 245, 1) 100%);
-/* background: linear-gradient(171deg, rgba(255, 0, 128, 1) 0%, rgba(102, 0, 255, 1) 53%, rgba(255, 0, 245, 1) 100%); */
-/* background: linear-gradient(171deg, rgba(255, 255, 0, 1) 0%, rgba(0, 255, 153, 1) 53%, rgba(255, 0, 245, 1) 100%); */
-/* background: linear-gradient(171deg, rgba(0, 255, 128, 1) 0%, rgba(0, 128, 255, 1) 53%, rgba(255, 0, 245, 1) 100%); */
-
-
-
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/fundo-teste.jpg'); */
-    /* background-size: cover; */
-
+}
+.modal-cores{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cores-modal-item{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
 }
 .conteudo-home{
     width: 100%;
     height: 100vh;
     overflow-y: auto;
 }
+.cores-modal-item.cor-calma-1{
+    background: linear-gradient(171deg, #CFF1FF 0%, #E0EAFF 100%); 
+}
+.cores-modal-item.cor-calma-2{
+    background: linear-gradient(171deg, #C5E1A5 0%, #DCF8C6 100%); 
+}
+.cores-modal-item.cor-calma-3{
+    background: linear-gradient(171deg, #FFD6E8 0%, #FFE5EC 100%);
+}
+.cores-modal-item.cor-calma-4{
+    background: linear-gradient(171deg, #FFF4CC 0%, #FFFAD5 100%);
+}
+
+
+.cores-modal-item.cor-escura-1{
+    background: linear-gradient(171deg, #0A3754 0%, #081F2F 100%); 
+}
+.cores-modal-item.cor-escura-2{
+    background: linear-gradient(171deg, #2E7D32 0%, #1B5E20 100%); 
+}
+.cores-modal-item.cor-escura-3{
+    background: linear-gradient(171deg, #8E0038 0%, #5B0A26 100%);
+}
+.cores-modal-item.cor-escura-4{
+    background: linear-gradient(171deg, #8A6100 0%, #664D03 100%);
+}
+
+
+
+.cores-modal-item.cor-vibrante-1{
+    background: linear-gradient(171deg, rgba(0, 128, 255, 1) 0%, rgba(51, 255, 0, 1) 53%, rgba(255, 0, 245, 1) 100%);
+}
+.cores-modal-item.cor-vibrante-2{
+    background: linear-gradient(171deg, rgba(255, 0, 128, 1) 0%, rgba(102, 0, 255, 1) 53%, rgba(255, 0, 245, 1) 100%); 
+}
+.cores-modal-item.cor-vibrante-3{
+    background: linear-gradient(171deg, rgba(255, 255, 0, 1) 0%, rgba(0, 255, 153, 1) 53%, rgba(255, 0, 245, 1) 100%);
+}
+.cores-modal-item.cor-vibrante-4{
+    background: linear-gradient(171deg, rgba(0, 255, 128, 1) 0%, rgba(0, 128, 255, 1) 53%, rgba(255, 0, 245, 1) 100%);
+}
+
+
+
+
 
 
 .tempo-topo p{
@@ -79,5 +113,14 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .tema-dark:hover{
     background-color: #1c1c1c !important;
-    border: solid thin #1c1c1c;
+    border: none;
+}
+
+
+@media (min-width: 576px){
+    .modal-dialog.modal-dialog-cores {
+        max-width: 900px !important;
+        margin: 1.75rem auto;
+    }
+    
 }

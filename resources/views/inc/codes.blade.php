@@ -10,3 +10,4 @@
 <!-- menu config-->
 <script src="/js/tema-dark.js"></script>
 <script src="/js/checkbox-menu-config.js"></script>
+<script src="/js/modal-cores.js"></script>
