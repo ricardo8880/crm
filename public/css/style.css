@@ -12,15 +12,72 @@
     background-color: var(--primary-color);
     width: 5px;
 }
+
+
 .config-pagina-inicial{
     display: flex;
-    background: linear-gradient(171deg, rgba(255,0,0,1) 0%, rgba(121,9,58,1) 53%, rgba(255,0,245,1) 100%);}
+    /* cores claras */
+    /* background: linear-gradient(171deg, #CFF1FF 0%, #E0EAFF 100%); */
+    /* background: linear-gradient(171deg, #C5E1A5 0%, #DCF8C6 100%); */
+    /* background: linear-gradient(171deg, #FFD6E8 0%, #FFE5EC 100%); */
+    /* background: linear-gradient(171deg, #FFF4CC 0%, #FFFAD5 100%); */
+    /* cores escuras */
+/* background: linear-gradient(171deg, #0A3754 0%, #081F2F 100%); */
+/* background: linear-gradient(171deg, #2E7D32 0%, #1B5E20 100%); */
+/* background: linear-gradient(171deg, #8E0038 0%, #5B0A26 100%); */
+/* background: linear-gradient(171deg, #8A6100 0%, #664D03 100%); */
+/* cores vibrantes */
+background: linear-gradient(171deg, rgba(0, 128, 255, 1) 0%, rgba(51, 255, 0, 1) 53%, rgba(255, 0, 245, 1) 100%);
+/* background: linear-gradient(171deg, rgba(255, 0, 128, 1) 0%, rgba(102, 0, 255, 1) 53%, rgba(255, 0, 245, 1) 100%); */
+/* background: linear-gradient(171deg, rgba(255, 255, 0, 1) 0%, rgba(0, 255, 153, 1) 53%, rgba(255, 0, 245, 1) 100%); */
+/* background: linear-gradient(171deg, rgba(0, 255, 128, 1) 0%, rgba(0, 128, 255, 1) 53%, rgba(255, 0, 245, 1) 100%); */
+
+
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/fundo-teste.jpg'); */
+    /* background-size: cover; */
+
+}
 .conteudo-home{
     width: 100%;
     height: 100vh;
     overflow-y: auto;
 }
 
+
+.tempo-topo p{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.tempo-topo p:nth-child(1){
+font-size: 30px;
+}
+.conteudo-home-centro-topo{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+}
+.pesquisa p {padding-right: 30px;}
+.pesquisa p input{
+background-color: rgba(255, 255, 255, 0.295);
+width: 600px;
+border-radius: 4px;
+border: solid thin rgba(255, 255, 255, 0.295);
+outline: none;
+caret-color: rgba(255, 255, 255, 0.295);
+color: rgba(255, 255, 255, 0.295);
+padding: 7px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 .tema-dark{
     background-color: #1c1c1c !important;
+    border: solid thin #1c1c1c;
+}
+.tema-dark:hover{
+    background-color: #1c1c1c !important;
+    border: solid thin #1c1c1c;
 }

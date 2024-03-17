@@ -59,7 +59,8 @@ function menuFixo(menuFixoDados, colorMenu) {
         menu_lateral.style.width = '20%';
         // diminui o conteúdo central
         let conteudo_centro = document.querySelector('.conteudo-home-centro');
-        conteudo_centro.style.paddingLeft = '20.5%'
+        conteudo_centro.style.paddingLeft = '20.5%';
+        
         // --------------------------
         categoriasMenu.forEach(categoria => {
             categoria.style.color = '#198754';
@@ -70,7 +71,15 @@ function menuFixo(menuFixoDados, colorMenu) {
         menu_lateral.style.width = menuFixoDados;
         // diminui o conteúdo central
         let conteudo_centro = document.querySelector('.conteudo-home-centro');
-        conteudo_centro.style.paddingLeft = '53px'
+        conteudo_centro.style.paddingLeft = '53px';
+        
+        let check_menu_lateral_fixo =  document.querySelector("#menu-lateral-fixo")
+        if(check_menu_lateral_fixo.checked){
+            conteudo_centro.style.paddingLeft = '20.5%';
+        }else{
+            conteudo_centro.style.paddingLeft = '53px';
+        }
+
         // --------------------------
         categoriasMenu.forEach(categoria => {
             categoria.style.color = colorMenu;

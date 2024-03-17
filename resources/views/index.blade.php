@@ -11,11 +11,15 @@
     
     
       <div class="conteudo-home-centro">
-        
-        <div class="horas">
-
+        <div class="conteudo-home-centro-topo">
+          <div class="tempo-topo">
+            <p class="horas"></p>
+            <p class="data"></p>
+          </div>
+          <div class="pesquisa">
+            <p><input type="text" name="pesquisa" placeholder="Explore nosso conteúdo..."></p>
+          </div>
         </div>
-
       </div>
       
       <div class="conteudo-home-direito">

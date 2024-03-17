@@ -1,4 +1,4 @@
-    // Tema Dark
+    // // Tema Dark
 
 
     class Tema {
@@ -54,16 +54,72 @@
     );
 
 
+    class ElementosTemaDark {
+        constructor() {
+            this.elementos = [];
+            
+            // Verifica se o valor do localStorage está definido, caso contrário, define-o como 'false' para que o tema não seja escuro por padrão
+            if (localStorage.getItem('temaDarkClicado') === null) {
+                localStorage.setItem('temaDarkClicado', 'false');
+            }
     
-
-
-
-
-
-
-
-
-
-
-
-
+            // Adiciona um listener de evento ao botão de tema escuro
+            const temaDarkBtn = document.querySelector("#tema-dark");
+            if (temaDarkBtn) {
+                temaDarkBtn.addEventListener('change', () => {
+                    this.toggleTemaDark();
+                });
+            }
+            
+            // Verifica se o tema escuro foi clicado pela primeira vez e aplica o tema se necessário
+            if (localStorage.getItem('temaDarkClicado') === 'true') {
+                this.aplicarTemaDark();
+            }
+        }
+    
+        toggleTemaDark() {
+            const temaDarkClicado = localStorage.getItem('temaDarkClicado') === 'true';
+            localStorage.setItem('temaDarkClicado', (!temaDarkClicado).toString());
+    
+            // Aplica ou remove o tema escuro
+            if (!temaDarkClicado) {
+                this.aplicarTemaDark();
+            } else {
+                this.removerTemaDark();
+            }
+        }
+    
+        aplicarTemaDark() {
+            this.elementos.forEach(elemento => {
+                elemento.classList.add('tema-dark');
+            });
+        }
+    
+        removerTemaDark() {
+            this.elementos.forEach(elemento => {
+                elemento.classList.remove('tema-dark');
+            });
+        }
+    
+        adicionarElemento(selector) {
+            const elemento = document.querySelector(selector);
+            if (elemento) {
+                this.elementos.push(elemento);
+                // Verifica se o tema escuro foi clicado pela primeira vez e aplica o tema se necessário
+                if (localStorage.getItem('temaDarkClicado') === 'true') {
+                    elemento.classList.add('tema-dark');
+                }
+            } else {
+                console.error(`Elemento não encontrado para o seletor: ${selector}`);
+            }
+        }
+    }
+    
+    const temaDark = new ElementosTemaDark();
+    
+    // Adicionando elementos ao array
+    temaDark.adicionarElemento("#elemento1");
+    temaDark.adicionarElemento(".pesquisa p input");
+    temaDark.adicionarElemento(".btn-primary");
+    temaDark.adicionarElemento("body");
+    

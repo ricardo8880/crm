@@ -10,7 +10,7 @@
     padding: 0;
 }
 #menu-lateral ul a{text-decoration: none; color: var(--primary-color);}
-#menu-lateral ul a span{margin-left: 5px; color: transparent; transition: color .4s;}
+#menu-lateral ul a span{margin-left: 9px; color: transparent; transition: color .4s;}
 #menu-lateral ul li{
     width: 100%;
     height: 40px;
